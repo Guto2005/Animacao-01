@@ -1,0 +1,47 @@
+/*.elemento-animado{
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    display: flex;
+    justify-content: center;
+    transition: width 6s ease-in , transform 2s;
+}
+
+.elemento-animado:hover{
+    width: 300px;
+    transform: scale(-2);
+    /* transform: skew - graus | rotate - graus | scale - numeros */
+/*}
+
+/*.elemento-animado p{
+    color: #fff;
+
+}
+*/
+
+.elemento-animado{
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    color: white;
+}
+
+.elemento-animado:hover{
+    animation-name: change-color; /* usando a animação predefinida */
+    animation-duration: 4s;
+    animation-timing-function: ease-in;
+}
+/*Definindo o comportamento da animação - configuração dos keyframes*/
+@keyframes change-color{
+    0%{
+        background-color: brown;
+    }   
+
+    50%{
+        background-color: tomato;
+    }
+
+    100%{
+        background-color: #fff;
+    }
+}
